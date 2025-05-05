@@ -1,0 +1,58 @@
+.selection-button {
+  display: flex;
+  flex-direction: column; /* アイコンとテキストを縦に */
+  align-items: center; /* 中央揃え */
+  padding: 25px 20px; /* 上下のパディングを多めに */
+  border: none;
+  border-radius: 15px; /* 角丸 */
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%; /* 親要素いっぱいに広がる */
+  text-align: center;
+  background-color: #f0f0f0; /* デフォルトの背景色 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.selection-button:hover {
+  opacity: 0.9; /* ホバー時に少し透過 */
+}
+
+.icon-container {
+  width: 60px; /* アイコンコンテナのサイズ */
+  height: 60px;
+  border-radius: 50%; /* 円形 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px; /* アイコンとテキストの間隔 */
+  font-size: 28px; /* アイコンサイズ */
+  color: white; /* アイコンの色 */
+}
+
+.button-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333; /* テキストの色 */
+}
+
+/* 色ごとのスタイル */
+.selection-button.blue {
+  background-color: #e0f2fe; /* 薄い青 (例: Tailwind sky-100) */
+}
+.icon-container.blue {
+  background-color: #3b82f6; /* 青 (例: Tailwind blue-500) */
+}
+
+.selection-button.green {
+  background-color: #dcfce7; /* 薄い緑 (例: Tailwind green-100) */
+}
+.icon-container.green {
+  background-color: #22c55e; /* 緑 (例: Tailwind green-500) */
+}
+
+.selection-button.orange {
+  background-color: #fff7ed; /* 薄いオレンジ (例: Tailwind orange-100) */
+}
+.icon-container.orange {
+  background-color: #f97316; /* オレンジ (例: Tailwind orange-500) */
+}
